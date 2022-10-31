@@ -1,0 +1,1 @@
+console.log("ola") // rodar no terminal com "node filename.ex"
