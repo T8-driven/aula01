@@ -1,1 +1,3 @@
-console.log("ola") // rodar no terminal com "node filename.ex"
+const fs = require('fs') // common js
+
+fs.writeFileSync('hello.txt', 'Hello Fs')
