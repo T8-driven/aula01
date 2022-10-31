@@ -6,6 +6,6 @@ promisse.then((res) => {
   console.log(res.data.sprites);
 }); */
 
-import {somar} from './somar.js'
+import {somar} from './somar.js' // adicionar a extensão em arquivos externos que eu criei
 
 console.log(somar(10,2))
