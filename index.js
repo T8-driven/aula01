@@ -1,7 +1,7 @@
-const os = require("os");
+// const axios = require('axios');//common js
+import axios from "axios"; //es module
 
-console.log(os.platform());
-console.log(os.cpus());
-console.log(os.cpus().length);
-console.log(os.totalmem());// total de memoria em bytes
-console.log(os.totalmem() / 1024 / 1024 / 1024); // total de memoria em GB
+const promisse = axios.get("https://pokeapi.co/api/v2/pokemon/1");
+promisse.then((res) => {
+  console.log(res.data.sprites);
+});
